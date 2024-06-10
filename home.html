@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+<style>
+*{
+    box-sizing: border-box;
+}
+div {
+    background-color: #E3FEF7;
+    padding: 2px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    margin-left: 500px;
+    margin-top: 200px;
+    font-family: 'Times New Roman', serif;
+
+}
+
+.main-img {
+    height: 600px;
+    width: 1325px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2 { 
+    align-content: center;
+    font-size: 50px;
+    margin: 20px;
+    font-family: 'Times New Roman', serif;
+}
+.row::after {
+    content:"";
+    display: table;
+    clear: both; 
+}
+
+img{ 
+    height: 799px;
+    width: 663px;
+}
+ 
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #E3FEF7; /* Replace #e0e0e0 with your desired background color */
+}
+
+p {
+    font-size: 25px;
+    margin: 35px;
+    font-family: 'Times New Roman', serif;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+
+section {
+  width: 100%;
+  font-family: 'Times New Roman', serif;
+  margin: 18px;
+  margin-bottom: 0px;
+  display: inline-block;
+  background: #E3FEF7;
+  height: 50vh;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+
+.footer-distributed{
+  background: #427D9D;
+  box-shadow: 0 1px 1px 0 #E3FEF7(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #003C43;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0px;
+  align-items: left;
+}
+
+.footer-distributed h3 span{
+  color:  rgb(32, 121, 116);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #003C43;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color: #003C43;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #003C43;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #003C43;
+  color: #003C43;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 5px 10px;
+  vertical-align: middle;
+}
+.footer-container {
+    margin-left: -30px; /* Adjust the value as needed to move the footer to the left */
+}
+footer {
+    margin-left: -30px; /* Adjust the value as needed to move the footer to the left */
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #003C43;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #003C43;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #003C43;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #003C43;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+.brand {
+ height: 500px;
+ width: 1300px;
+ font-family: 'Times New Roman', serif;
+ display: block; 
+ margin-top: 10px; 
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+p1{
+    margin: 35px;
+    font-family: 'Times New Roman', serif;
+    color: #003C43;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 0px;
+    text-align: center;
+    width: min-content; /* Adjust width as needed */
+}
+
+.text-overlay h2 {
+    margin-top: 0;
+    color: #481E14; /* Set text color */
+}
+text-overlay p {
+    margin-bottom: 0;
+    color: white; /* Set text color */
+    font-family: 'Times New Roman', serif;
+}
+
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    margin-right: 80px;
+    margin-bottom: 60px;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="row">
+    <img src="parle3.png" alt="smoodh" class="main-img">
+
+    <div class="column div" ">
+        
+    <div class="image-container">
+        <img src="coffee.avif" alt="drink" class="img">
+        <div class="text-overlay">
+            <h2>The Largest Indian Beverage Company</h2>
+           
+        </div>
+    </div>
+    <p> 
+    </p>
+    </div>
+<div class="column div" style="background-color: #E3FEF7;">
+    <h2>About Us</h2>
+    <br>
+    <p>
+        <em>Parle Agro</em>, a pioneer in the Indian beverage industry, 
+        has been creating innovative products and iconic brands since 1985.
+<br>
+<br>
+        Headquartered in Mumbai, with over 5500+ employees, Parle Agro 
+        is the largest Indian beverage company.
+    <br><br>    
+        Our strength lies in establishing new categories, building brands 
+        and capturing market share within those categories. Our bevy of brands 
+        include Frooti, Appy, Appy Fizz, BFizz, SMOODH, Bailley, Bailley Soda, Bombay99.
+        <br><br>
+        We have always been passionate about building our own brands. We like 
+        to create, and we like to nurture what we create. Fueled by innovation 
+        that is engrained in the business DNA, our focus and vision is making 
+        Parle Agro, the No.1 beverage company in India.
+        <br><br>
+        Our strength lies in establishing new categories, building brands and 
+        capturing market share within those categories. 
+        Our bevy of brands include Frooti, Appy, Appy Fizz, BFizz, SMOODH, 
+        Bailley, Bailley Soda, Bombay 99.
+        
+</div>
+
+
+<div>
+
+<section> 
+    
+    <h3>BRANDS</h3>
+    <p>Parle Agro, renowned for its innovative and refreshing 
+        beverage offerings, presents an array of brands under 
+        its banner, including the widely cherished <em>"Smoodh."</em> 
+        <br><br>
+        Among its flagship products is <em>"Frooti,"</em> a quintessential 
+        mango drink celebrated for its distinctive flavor profile 
+        and convenient packaging options. Complementing Frooti is 
+        <em>"Appy Fizz,"</em> an effervescent apple beverage that tantalizes 
+        taste buds with its unique fizzy twist. Additionally, Parle 
+        Agro offers a diverse range of fruit-based drinks like <em>"Appy"</em> 
+        and <em>"Grappo Fizz,"</em> each delivering a burst of fruity goodness 
+        in every sip. 
+        <br><br>
+        With its commitment to quality and taste, 
+        Parle Agro continues to delight consumers worldwide with its 
+        refreshing and rejuvenating beverage portfolio.</p>
+        <br>
+        <br>
+
+</section>
+
+
+<img src="brand.png" alt="brand" class="brand">
+
+</div>
+
+
+<section>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Company<span>logo</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html" class="link-1">Home</a>
+          <a href="review.html">Reviews</a>
+          <a href="#">Order</a>
+          <a href="admin_page.php">Log in</a>
+          <a href="#">Register</a>
+        </p>
+
+        <p class="footer-company-name">Parle Agro © 2019</p>
+        <br>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Corporate Head Office <br> Parle Agro Pvt. Ltd.</span> Andheri (E), Mumba</p>
+        </div>
+
+        <div>
+
+          <p1>+91 55555 22222</p1>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@smoodh.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+                  <span>About the company</span>        
+            "Smoodh" is a product under the umbrella of Parle Agro, 
+            a prominent beverage company known for its innovative 
+            and refreshing offerings 
+            <br>
+            <br>
+        </p>
+      </div>
+    </section>
+    </footer>
+</body>
+    </html> 
+    

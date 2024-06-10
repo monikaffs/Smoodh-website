@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr ; /* Divide the page into two rows, first one for full-width section */
+    grid-template-columns: 1fr 1fr; /* Divide the page into two columns for half-height sections */
+    height: 100%;
+}
+
+.full-width-section {
+    background-color: #f0f0f0; /* Example background color */
+    grid-row: 1; /* Place it in the first row */
+    grid-column: 1 / span 3; /* Span across all columns */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-width-section2 {
+    background-color: #f0f0f0; /* Example background color */
+    grid-row: 1; /* Place it in the first row */
+    grid-column: 1 / span 3; /* Span across all columns */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-height-section {
+    background-color: #e0e0e0; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-orientation: mixed;
+}
